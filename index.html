@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Formulaire Joueur</title>
-  <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Formulaire Joueur</title>
+	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="container">
-  </div>
+	<div class="container">
+		<form id="formContact" onsubmit="formContact_result(); return false;">
+			<fieldset>
+				<legend>Informations personnelles</legend>
+				<div>
+					<label for="formFirstName__text"> Prénom* </label>
+					<input id="formFirstName__text" type="text" name="text" placeholder="Inserer votre prenom ici">
+					<label for="formName__text"> Nom* </label>
+					<input id="formName__text" type="text" name="text" placeholder="Inserer votre nom ici">
+				</div>
+
+				<label for="formDateOfBirth__text"> Date de naissane* </label>
+				<input type="date" name="date" id="formDateOfBirth__text" placeholder="Date">
+
+
+			</fieldset>
+			<label> Numéro du joueur(compris entre 9 et 99)</label>
+			<input type="number" min="9" max="99">
+
+			<form id="formContact" onsubmit="formContact_result(); return false;">
+				<fieldset>
+					<legend>Liste des postes auxquels je peux évoluer</legend>
+					<div class="postes">
+						<input id="checkBox" type="checkbox">
+						<label> Défenseur</label>
+
+						<input id="checkBox" type="checkbox">
+						<label> Milieu</label>
+
+						<input id="checkBox" type="checkbox">
+						<label> Ataquant</label>
+					</div>
+					<input id="formContact__info" type="submit" value="Obtenir des informations supplémentaires sur les postes">
+				</fieldset>
+				<input id="formContact__submit" type="submit" value="Envoyer"> <label> * = Champs obligatoires</label>
+			</form>
+		</form>
+	</div>
 </body>
+
 </html>
