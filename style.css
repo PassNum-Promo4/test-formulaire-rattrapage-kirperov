@@ -1,20 +1,33 @@
-html,body {
-  height: 100%;
-  margin: 0;
+html,
+body {
+	height: 100%;
+	margin: 0;
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
 }
 
 form {
-  border: 3px #000000 solid;
-  padding: 30px;
+	border: 3px #000000 solid;
+	padding: 30px;
 }
 
 form * {
-  margin: 5px;
+	margin: 5px;
+}
+
+/*Pour mettre la liste des postes en colonne*/
+
+.postes label {
+	display: block;
+	padding-left: 16px;
+}
+
+.postes input {
+	position: absolute;
+	margin-left: 0px;
 }
